@@ -45,7 +45,6 @@ class PasswordViewController: UIViewController {
                 return
             }
         } else {
-            print(self.password)
             let alert: UIAlertController = UIAlertController(title: "パスワードがまちがっているよ", message: "", preferredStyle:  UIAlertController.Style.alert)
 
             let defaultAction: UIAlertAction = UIAlertAction(title: "やりなおす", style: UIAlertAction.Style.default, handler:{

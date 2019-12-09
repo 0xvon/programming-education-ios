@@ -129,6 +129,7 @@
                     <navigationItem key="navigationItem" id="qUP-3E-RRl"/>
                     <connections>
                         <outlet property="alien" destination="HK8-fD-qt1" id="B2c-LZ-dlM"/>
+                        <outlet property="cardStackView" destination="Zo3-cu-Avy" id="Gn5-qy-i0S"/>
                         <outlet property="dog" destination="LBU-J3-ken" id="SdQ-Rv-09a"/>
                         <outlet property="unchi" destination="ZaU-W2-PjV" id="pM4-to-uJg"/>
                         <segue destination="InI-nI-Kq0" kind="show" identifier="toPassword" id="Wy6-28-GEq"/>
