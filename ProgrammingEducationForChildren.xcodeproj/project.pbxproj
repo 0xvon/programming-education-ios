@@ -13,8 +13,14 @@
 		D97B647B239EF6710024E4C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D97B6479239EF6710024E4C0 /* Main.storyboard */; };
 		D97B647D239EF6720024E4C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D97B647C239EF6720024E4C0 /* Assets.xcassets */; };
 		D97B6480239EF6720024E4C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D97B647E239EF6720024E4C0 /* LaunchScreen.storyboard */; };
-		D97B648B239EFD9E0024E4C0 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B648A239EFD9E0024E4C0 /* TopViewController.swift */; };
-		D97B648D239EFDCF0024E4C0 /* Top.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D97B648C239EFDCF0024E4C0 /* Top.storyboard */; };
+		D97B6490239EFEE20024E4C0 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B648F239EFEE20024E4C0 /* PasswordViewController.swift */; };
+		D97B6492239EFF1F0024E4C0 /* Password.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D97B6491239EFF1F0024E4C0 /* Password.storyboard */; };
+		D97B6497239F03980024E4C0 /* UnchiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B6496239F03980024E4C0 /* UnchiViewController.swift */; };
+		D97B6499239F03B80024E4C0 /* Unchi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D97B6498239F03B80024E4C0 /* Unchi.storyboard */; };
+		D97B649B239F03DE0024E4C0 /* AlienViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B649A239F03DE0024E4C0 /* AlienViewController.swift */; };
+		D97B649D239F03FC0024E4C0 /* Alien.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D97B649C239F03FC0024E4C0 /* Alien.storyboard */; };
+		D97B649F239F04260024E4C0 /* DogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B649E239F04260024E4C0 /* DogViewController.swift */; };
+		D97B64A1239F04430024E4C0 /* Dog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D97B64A0239F04430024E4C0 /* Dog.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +32,14 @@
 		D97B647C239EF6720024E4C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D97B647F239EF6720024E4C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D97B6481239EF6720024E4C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D97B648A239EFD9E0024E4C0 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
-		D97B648C239EFDCF0024E4C0 /* Top.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Top.storyboard; sourceTree = "<group>"; };
+		D97B648F239EFEE20024E4C0 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		D97B6491239EFF1F0024E4C0 /* Password.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Password.storyboard; sourceTree = "<group>"; };
+		D97B6496239F03980024E4C0 /* UnchiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnchiViewController.swift; sourceTree = "<group>"; };
+		D97B6498239F03B80024E4C0 /* Unchi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Unchi.storyboard; sourceTree = "<group>"; };
+		D97B649A239F03DE0024E4C0 /* AlienViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienViewController.swift; sourceTree = "<group>"; };
+		D97B649C239F03FC0024E4C0 /* Alien.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alien.storyboard; sourceTree = "<group>"; };
+		D97B649E239F04260024E4C0 /* DogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewController.swift; sourceTree = "<group>"; };
+		D97B64A0239F04430024E4C0 /* Dog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dog.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +86,10 @@
 		D97B6487239EF6790024E4C0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D97B6489239EFD840024E4C0 /* Top */,
+				D97B6495239F03640024E4C0 /* Unchi */,
+				D97B6494239F03610024E4C0 /* Alien */,
+				D97B6493239F035E0024E4C0 /* Dog */,
+				D97B648E239EFEBE0024E4C0 /* Password */,
 				D97B6477239EF6710024E4C0 /* MainViewController.swift */,
 				D97B6479239EF6710024E4C0 /* Main.storyboard */,
 			);
@@ -88,13 +103,40 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		D97B6489239EFD840024E4C0 /* Top */ = {
+		D97B648E239EFEBE0024E4C0 /* Password */ = {
 			isa = PBXGroup;
 			children = (
-				D97B648A239EFD9E0024E4C0 /* TopViewController.swift */,
-				D97B648C239EFDCF0024E4C0 /* Top.storyboard */,
+				D97B648F239EFEE20024E4C0 /* PasswordViewController.swift */,
+				D97B6491239EFF1F0024E4C0 /* Password.storyboard */,
 			);
-			path = Top;
+			path = Password;
+			sourceTree = "<group>";
+		};
+		D97B6493239F035E0024E4C0 /* Dog */ = {
+			isa = PBXGroup;
+			children = (
+				D97B649E239F04260024E4C0 /* DogViewController.swift */,
+				D97B64A0239F04430024E4C0 /* Dog.storyboard */,
+			);
+			path = Dog;
+			sourceTree = "<group>";
+		};
+		D97B6494239F03610024E4C0 /* Alien */ = {
+			isa = PBXGroup;
+			children = (
+				D97B649A239F03DE0024E4C0 /* AlienViewController.swift */,
+				D97B649C239F03FC0024E4C0 /* Alien.storyboard */,
+			);
+			path = Alien;
+			sourceTree = "<group>";
+		};
+		D97B6495239F03640024E4C0 /* Unchi */ = {
+			isa = PBXGroup;
+			children = (
+				D97B6496239F03980024E4C0 /* UnchiViewController.swift */,
+				D97B6498239F03B80024E4C0 /* Unchi.storyboard */,
+			);
+			path = Unchi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,8 +197,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D97B648D239EFDCF0024E4C0 /* Top.storyboard in Resources */,
+				D97B649D239F03FC0024E4C0 /* Alien.storyboard in Resources */,
+				D97B6499239F03B80024E4C0 /* Unchi.storyboard in Resources */,
 				D97B6480239EF6720024E4C0 /* LaunchScreen.storyboard in Resources */,
+				D97B64A1239F04430024E4C0 /* Dog.storyboard in Resources */,
+				D97B6492239EFF1F0024E4C0 /* Password.storyboard in Resources */,
 				D97B647D239EF6720024E4C0 /* Assets.xcassets in Resources */,
 				D97B647B239EF6710024E4C0 /* Main.storyboard in Resources */,
 			);
@@ -169,10 +214,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D97B648B239EFD9E0024E4C0 /* TopViewController.swift in Sources */,
+				D97B6497239F03980024E4C0 /* UnchiViewController.swift in Sources */,
+				D97B6490239EFEE20024E4C0 /* PasswordViewController.swift in Sources */,
+				D97B649B239F03DE0024E4C0 /* AlienViewController.swift in Sources */,
 				D97B6478239EF6710024E4C0 /* MainViewController.swift in Sources */,
 				D97B6474239EF6710024E4C0 /* AppDelegate.swift in Sources */,
 				D97B6476239EF6710024E4C0 /* SceneDelegate.swift in Sources */,
+				D97B649F239F04260024E4C0 /* DogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  TopViewController.swift
+//  DogViewController.swift
 //  ProgrammingEducationForChildren
 //
 //  Created by Masato TSUTSUMI on 2019/12/09.
@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 
-class TopViewController: UIViewController {
+class DogViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

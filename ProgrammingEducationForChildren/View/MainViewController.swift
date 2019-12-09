@@ -10,48 +10,38 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var button: UIButton!
-    @IBOutlet weak var visibleButton: UIButton!
+    @IBOutlet weak var unchi: UIButton!
+    @IBOutlet weak var alien: UIButton!
+    @IBOutlet weak var dog: UIButton!
+    
+    let passwords: [String] = ["a", "b", "c"]
+    
+    var vc = PasswordViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
-        textField.textContentType = .password
-        textField.isSecureTextEntry = true
+     
+    }
+    @IBAction func unchiTapped(_ sender: Any) {
+        performSegue(withIdentifier: "toPassword", sender: passwords[0])
+        
         
     }
-
-    @IBAction func buttonTapped(_ sender: Any) {
-        guard let password = textField.text else {
-            print("password not input")
-            return
-        }
-        if password == "hello" {
-            performSegue(withIdentifier: "toTop", sender: nil)
-        } else {
-            let alert: UIAlertController = UIAlertController(title: "パスワードがまちがっているよ", message: "", preferredStyle:  UIAlertController.Style.alert)
-
-            let defaultAction: UIAlertAction = UIAlertAction(title: "やりなおす", style: UIAlertAction.Style.default, handler:{
-                (action: UIAlertAction!) -> Void in
-            })
-            
-            alert.addAction(defaultAction)
-            present(alert, animated: true, completion: nil)
-        }
-    }
-    
-    @IBAction func visibleButtonTapped(_ sender: Any) {
-        textField.isSecureTextEntry.toggle()
+    @IBAction func alienTapped(_ sender: Any) {
+        performSegue(withIdentifier: "toPassword", sender: passwords[1])
         
-        if textField.isSecureTextEntry {
-            visibleButton.setImage(UIImage(systemName: "eye"), for: .normal)
-        } else {
-            visibleButton.setImage(UIImage(systemName: "eye.slash"), for: .normal)
-        }
+    }
+    @IBAction func dogTapped(_ sender: Any) {
+        performSegue(withIdentifier: "toPassword", sender: passwords[2])
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toPassword" {
+            let secondViewController = segue.destination as! PasswordViewController
+            secondViewController.password = sender as! String
+        }
+    }
+   
 }
 
