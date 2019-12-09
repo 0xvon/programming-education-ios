@@ -73,11 +73,6 @@ class MainViewController: UIViewController {
         center.removeObserver(self, name: name, object: nil)
     }
 
-    /**
-     端末が回転した時に呼出されます。
-
-     - Parameter notification: 通知オブジェクト
-     */
     @objc func orientationDidChange(_ notification: NSNotification) {
         // 端末の向きを判定します。
         // 縦向きを検知する場合、
@@ -93,5 +88,7 @@ class MainViewController: UIViewController {
             cardStackView.axis = .vertical
         }
     }
+    
+    
 }
 
