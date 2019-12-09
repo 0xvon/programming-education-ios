@@ -29,6 +29,13 @@ class MainViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
+        if self.view.bounds.width < self.view.bounds.height {
+            cardStackView.axis = .vertical
+        } else {
+            cardStackView.axis = .horizontal
+        }
+        
         let action = #selector(orientationDidChange(_:))
         let center = NotificationCenter.default
         let name = UIDevice.orientationDidChangeNotification
