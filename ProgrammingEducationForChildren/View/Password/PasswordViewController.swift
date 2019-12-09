@@ -22,20 +22,24 @@ class PasswordViewController: UIViewController {
         
         passwordTextField.textContentType = .password
         passwordTextField.isSecureTextEntry = true
+        
+        setButton(button: submitButton, color: .systemGreen)
     }
     
     @IBAction func submitButtonTapped(_ sender: Any) {
+        
         guard let password = passwordTextField.text else {
             print("password not input")
             return
         }
+        
         if password == self.password {
             switch password {
-            case "a":
+            case "0000":
                 performSegue(withIdentifier: "toUnchi", sender: nil)
-            case "b":
+            case "1111":
                 performSegue(withIdentifier: "toAlien", sender: nil)
-            case "c":
+            case "2222":
                 performSegue(withIdentifier: "toDog", sender: nil)
             default:
                 return
@@ -52,6 +56,7 @@ class PasswordViewController: UIViewController {
             present(alert, animated: true, completion: nil)
         }
     }
+    
     @IBAction func visibleButtonTapped(_ sender: Any) {
         passwordTextField.isSecureTextEntry.toggle()
         
@@ -60,5 +65,11 @@ class PasswordViewController: UIViewController {
         } else {
             visibleButton.setImage(UIImage(systemName: "eye.slash"), for: .normal)
         }
+    }
+    
+    func setButton(button: UIButton, color: UIColor) {
+        button.layer.cornerRadius = button.bounds.height / 2
+        button.tintColor = .white
+        button.backgroundColor = color
     }
 }

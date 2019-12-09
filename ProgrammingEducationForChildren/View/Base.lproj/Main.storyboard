@@ -55,56 +55,59 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="224.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZaU-W2-PjV">
-                                                <rect key="frame" x="153" y="97.5" width="108" height="30"/>
-                                                <state key="normal" title="ロボットうんち">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
+                                                <rect key="frame" x="30" y="30" width="354" height="164.5"/>
+                                                <state key="normal" title="ロボットうんち"/>
                                                 <connections>
                                                     <action selector="unchiTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i7S-PY-jeI"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ZaU-W2-PjV" secondAttribute="trailing" constant="30" id="AoB-KX-Ecq"/>
+                                            <constraint firstItem="ZaU-W2-PjV" firstAttribute="top" secondItem="PHL-Ff-oBD" secondAttribute="top" constant="30" id="Equ-ag-uZO"/>
+                                            <constraint firstItem="ZaU-W2-PjV" firstAttribute="leading" secondItem="PHL-Ff-oBD" secondAttribute="leading" constant="30" id="c2A-Qb-Kar"/>
                                             <constraint firstItem="ZaU-W2-PjV" firstAttribute="centerX" secondItem="PHL-Ff-oBD" secondAttribute="centerX" id="c8B-nT-RQA"/>
                                             <constraint firstItem="ZaU-W2-PjV" firstAttribute="centerY" secondItem="PHL-Ff-oBD" secondAttribute="centerY" id="vZg-TV-RzP"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZaU-W2-PjV" secondAttribute="bottom" constant="30" id="wVr-D0-3Za"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hme-3w-y6G">
                                         <rect key="frame" x="0.0" y="224.5" width="414" height="225"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HK8-fD-qt1">
-                                                <rect key="frame" x="130.5" y="97.5" width="153" height="30"/>
-                                                <state key="normal" title="わがままうちゅうじん">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
+                                                <rect key="frame" x="30" y="30" width="354" height="165"/>
+                                                <state key="normal" title="わがままうちゅうじん"/>
                                                 <connections>
                                                     <action selector="alienTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c8R-5S-3vH"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="HK8-fD-qt1" firstAttribute="centerX" secondItem="hme-3w-y6G" secondAttribute="centerX" id="4x5-pd-FDj"/>
+                                            <constraint firstItem="HK8-fD-qt1" firstAttribute="leading" secondItem="hme-3w-y6G" secondAttribute="leading" constant="30" id="6sx-7l-GSv"/>
+                                            <constraint firstAttribute="trailing" secondItem="HK8-fD-qt1" secondAttribute="trailing" constant="30" id="Iej-6Z-13f"/>
                                             <constraint firstItem="HK8-fD-qt1" firstAttribute="centerY" secondItem="hme-3w-y6G" secondAttribute="centerY" id="pVh-PW-Nue"/>
+                                            <constraint firstItem="HK8-fD-qt1" firstAttribute="top" secondItem="hme-3w-y6G" secondAttribute="top" constant="30" id="tCs-Xl-UUX"/>
+                                            <constraint firstAttribute="bottom" secondItem="HK8-fD-qt1" secondAttribute="bottom" constant="30" id="y41-tT-fhk"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FoH-xh-H69">
                                         <rect key="frame" x="0.0" y="449.5" width="414" height="224.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBU-J3-ken">
-                                                <rect key="frame" x="138" y="97" width="138" height="30"/>
-                                                <state key="normal" title="おぼえられないいぬ">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
+                                                <rect key="frame" x="30" y="30" width="354" height="164.5"/>
+                                                <state key="normal" title="おぼえられないいぬ"/>
                                                 <connections>
                                                     <action selector="dogTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IgB-GE-4Bb"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="LBU-J3-ken" firstAttribute="leading" secondItem="FoH-xh-H69" secondAttribute="leading" constant="30" id="31u-6L-iG5"/>
+                                            <constraint firstItem="LBU-J3-ken" firstAttribute="top" secondItem="FoH-xh-H69" secondAttribute="top" constant="30" id="CUA-es-ksS"/>
                                             <constraint firstItem="LBU-J3-ken" firstAttribute="centerY" secondItem="FoH-xh-H69" secondAttribute="centerY" id="Ixu-r4-gSG"/>
+                                            <constraint firstAttribute="trailing" secondItem="LBU-J3-ken" secondAttribute="trailing" constant="30" id="XHo-No-hG9"/>
+                                            <constraint firstAttribute="bottom" secondItem="LBU-J3-ken" secondAttribute="bottom" constant="30" id="aqU-fC-2J0"/>
                                             <constraint firstItem="LBU-J3-ken" firstAttribute="centerX" secondItem="FoH-xh-H69" secondAttribute="centerX" id="tC7-L5-zfm"/>
                                         </constraints>
                                     </view>
